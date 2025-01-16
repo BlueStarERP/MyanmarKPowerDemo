@@ -37,23 +37,36 @@ def loginpage(request):
 @login_required(login_url='myapp:login')
 def home(request):
     try:
-        
         p = StaffPermission.objects.get(usr = request.user)
         # print(p.hr)
         if p.manager is True:
-            return render(request, 'shop/base.html')
+            return render(request, 'shop/dashboard.html')
         
         elif p.admin is True:
             print('Admin')
         elif p.supervisor is True:
             print('Supervisor')
         else:    
-            return render(request, 'shop.html')
+            return render(request, 'shop/dashboard.html')
     except StaffPermission.DoesNotExist:
         # return HttpResponse('hellllo')
         return redirect('myapp:login')
 
 
 def create_item(request):
-    return render(request, 'shop/create_item.html')
+    fm = ItemsForm()
+    context = {'fm':fm}
+    return render(request, 'shop/create_item.html',context)
 
+def category_list(request):
+    context = {}
+    return render(request, 'shop/category_list.html',context)
+
+# SHOP
+def shopview1(request):
+    context = {}
+    return render(request, 'shopview2.html',context)
+    
+def shopview2(request):
+    context = {}
+    return render(request, 'shopview2.html',context)

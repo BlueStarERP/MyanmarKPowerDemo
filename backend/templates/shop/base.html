@@ -24,8 +24,8 @@
       <!-- Sidebar scroll-->
       <div>
         <div class="brand-logo d-flex align-items-center justify-content-between">
-          <a href="#" class="text-nowrap logo-img">
-            <img src="{% static 'assets/images/logos/logo-light.svg' %}" alt="" />
+          <a href="#" class="text-nowrap logo-img mx-3">
+            <img src="{% static 'assets/images/logos/head.png' %}" alt="" width="180" />
           </a>
           <div class="close-btn d-xl-none d-block sidebartoggler cursor-pointer" id="sidebarCollapse">
             <i class="ti ti-x fs-8"></i>
@@ -60,23 +60,31 @@
             </li>
             
             <li class="sidebar-item">
-              <a class="sidebar-link" href="./ui-typography.html" aria-expanded="false">
+              <a class="sidebar-link" href="{% url 'myapp:category_list' %}" aria-expanded="false">
                 <span>
                   <iconify-icon icon="solar:text-field-focus-bold-duotone" class="fs-6"></iconify-icon>
                 </span>
-                <span class="hide-menu">Typography</span>
+                <span class="hide-menu">Category Menu</span>
               </a>
             </li>
             <li class="nav-small-cap">
               <iconify-icon icon="solar:menu-dots-linear" class="nav-small-cap-icon fs-6" class="fs-6"></iconify-icon>
-              <span class="hide-menu">AUTH</span>
+              <span class="hide-menu">SHOP</span>
             </li>
             <li class="sidebar-item">
               <a class="sidebar-link" href="./authentication-login.html" aria-expanded="false">
                 <span>
                   <iconify-icon icon="solar:login-3-bold-duotone" class="fs-6"></iconify-icon>
                 </span>
-                <span class="hide-menu">Login</span>
+                <span class="hide-menu">Management</span>
+              </a>
+            </li>
+            <li class="sidebar-item">
+              <a class="sidebar-link" href="{% url 'myapp:shopview1' %}" aria-expanded="false">
+                <span>
+                  <iconify-icon icon="solar:user-plus-rounded-bold-duotone" class="fs-6"></iconify-icon>
+                </span>
+                <span class="hide-menu">Shop1</span>
               </a>
             </li>
             <li class="sidebar-item">
@@ -84,36 +92,26 @@
                 <span>
                   <iconify-icon icon="solar:user-plus-rounded-bold-duotone" class="fs-6"></iconify-icon>
                 </span>
-                <span class="hide-menu">Register</span>
-              </a>
-            </li>
-            <li class="nav-small-cap">
-              <iconify-icon icon="solar:menu-dots-linear" class="nav-small-cap-icon fs-4" class="fs-6"></iconify-icon>
-              <span class="hide-menu">EXTRA</span>
-            </li>
-            <li class="sidebar-item">
-              <a class="sidebar-link" href="./icon-tabler.html" aria-expanded="false">
-                <span>
-                  <iconify-icon icon="solar:sticker-smile-circle-2-bold-duotone" class="fs-6"></iconify-icon>
-                </span>
-                <span class="hide-menu">Icons</span>
+                <span class="hide-menu">Shop2</span>
               </a>
             </li>
             <li class="sidebar-item">
-              <a class="sidebar-link" href="./sample-page.html" aria-expanded="false">
+              <a class="sidebar-link" href="./authentication-register.html" aria-expanded="false">
                 <span>
-                  <iconify-icon icon="solar:planet-3-bold-duotone" class="fs-6"></iconify-icon>
+                  <iconify-icon icon="solar:user-plus-rounded-bold-duotone" class="fs-6"></iconify-icon>
                 </span>
-                <span class="hide-menu">Sample Page</span>
+                <span class="hide-menu">Shop3</span>
               </a>
             </li>
+            
+            
           </ul>
-          <!-- <div class="unlimited-access hide-menu bg-primary-subtle position-relative mb-7 mt-7 rounded-3">
+          <div class="unlimited-access hide-menu bg-primary-subtle position-relative mb-7 mt-7 rounded-3">
             <div class="d-flex">
               
               
             </div>
-          </div> -->
+          </div>
         </nav>
         <!-- End Sidebar navigation -->
       </div>

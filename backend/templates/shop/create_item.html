@@ -12,14 +12,14 @@
  
   <!-- Modal -->
   <div class="modal fade" id="createItem" tabindex="-1" aria-labelledby="createItemLabel" aria-hidden="true">
-    <div class="modal-dialog">
+    <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
         <div class="modal-header">
           <h1 class="modal-title fs-5" id="createItemLabel">Modal title</h1>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          ...
+          {{fm}}
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -54,7 +54,13 @@
               <td>2011-04-25</td>
               <td>$320,800</td>
               <td>100000</td>
-              <td><a class="btn btn-sm btn-primary"><i class=" ti ti-settings h5 text-white"></i></a></td>
+              <td>
+                <a class="btn btn-sm btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i class=" ti ti-settings h5 text-white"></i></a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">detail</a></li>
+                  <li><a class="dropdown-item" href="#">update</a></li>
+                </ul>
+              </td>
           </tr>
           
          
