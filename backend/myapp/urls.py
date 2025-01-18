@@ -5,6 +5,7 @@ app_name = 'myapp'
 urlpatterns = [
 #Shop View
     path('shopview1/', views.shopview1, name='shopview1'),
+    path('shopview2/', views.shopview2, name='shopview2'),
     path('login/',views.loginpage, name='login'),
     # path('logout/', views.logoutuser, name='logoutuser'),
 

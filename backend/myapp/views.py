@@ -65,7 +65,7 @@ def category_list(request):
 # SHOP
 def shopview1(request):
     context = {}
-    return render(request, 'shopview2.html',context)
+    return render(request, 'shopview1.html',context)
     
 def shopview2(request):
     context = {}
