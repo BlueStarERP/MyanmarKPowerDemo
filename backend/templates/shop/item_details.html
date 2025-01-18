@@ -1,0 +1,53 @@
+{% extends 'shop/base.html' %}
+
+{% block content %}
+
+
+
+<div class="card">
+    <div class="card-body">
+      <h5 class="card-title fw-semibold mb-4">Item Details</h5>
+      
+    <table id="example" class="table table-striped" style="width:100%">
+      <thead>
+          <tr>
+              <th>Photo</th>
+              <th>Item Name</th>
+              <th>Warehouse</th>
+              <th>Color</th>
+              <th>Size</th>
+              <th>Qty</th>
+              
+          </tr>
+      </thead>
+      <tbody>
+
+          <tr>
+              <td>photo</td>
+              <td>System Architect</td>
+              <td>WH1</td>
+              <td>red</td>
+              <td>S</td>
+              <td>800</td>
+          </tr>
+          
+         
+      </tbody>
+      <tfoot>
+        <tr>
+            <th>Photo</th>
+              <th>Item Name</th>
+              <th>Warehouse</th>
+              <th>Color</th>
+              <th>Size</th>
+              <th>Qty</th>
+            
+        </tr>
+      </tfoot>
+  </table>
+   </div>
+
+    
+  </div>
+
+{% endblock content %}

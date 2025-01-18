@@ -62,6 +62,11 @@ def category_list(request):
     context = {}
     return render(request, 'shop/category_list.html',context)
 
+def item_details(request):
+    context = {}
+    return render(request, 'shop/item_details.html',context)
+
+
 # SHOP
 def shopview1(request):
     context = {}
